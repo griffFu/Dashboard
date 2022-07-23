@@ -160,13 +160,13 @@ li {
 }
 
 .main-content{
-    background-color: gray;
     grid-row: 2 / 3;
     grid-column: 2 /3;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     border-style: solid;
+    margin-bottom: 40px;
 
 }
 
@@ -185,8 +185,31 @@ li {
     border-style: solid;
     border-color: black;
     margin: 10px;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    padding: 10px;;
 }
 
+.project-content{
+}
+
+.project-buttons{
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+}
+
+
+.project-buttons ul{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.project-buttons li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 .bottom-left{
 
@@ -195,11 +218,44 @@ li {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     border-style: solid;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    grid-template-columns: 1fr;
 
 }
 
+.post-an{
+    display: grid;
+    grid-template-rows: repeat(3,1fr) ;
+    padding: 10px;
+}
+
+.an1{
+    
+}
+.an2{
+
+}
+.an3{
+
+}
 .trending{
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    grid-template-columns: 1fr;
 
+}
+
+.tr-post{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+
+
+.tr{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
 }
